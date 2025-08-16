@@ -8,7 +8,7 @@ It includes essential packages, SSH, and power management, designed for reliable
 
 | Hostname | Board       | CPU                | RAM  | GPU             | OS    | Role        | Desktop  |
 |----------|-------------|--------------------|------|-----------------|-------|-------------|----------|
-| relic    | Dell XPS 13 | Intel (varies)     | 8GB+ | Intel (integrated) | NixOS | Test Laptop | Hyprland |
+| Yurei    | Dell XPS 13 | Intel (varies)     | 8GB+ | Intel (integrated) | NixOS | Test Laptop | Hyprland |
 
 ### Common Settings
 - **Disk Layout**:
@@ -29,19 +29,18 @@ It includes essential packages, SSH, and power management, designed for reliable
 - **State Version**: `25.05`
 
 ## Files
-All files are organized across `~/wtf`, `../nixos`, and `../home-manager`.
 
-Project Overview
+## Project Overview
 Mizuki delivers a curated, reproducible environment for developers, blending Omarchy’s one-command setup philosophy with a polished, aesthetic-driven experience. Key features include:
 
-Multi-System Support: Configurations for NixOS (laptops, desktop, VM) and Nix-Darwin (Mac Mini), defined in flake.nix.
-Desktop Environment: Hyprland on NixOS with Waybar, SwayNC, Fuzzel, Kitty, and keybindings (SUPER+F for Brave, SUPER+Y for Yazi, SUPER+I for emoji picker).
-Aesthetic: Catppuccin Mocha dark theme across Hyprland, Yazi, Kitty, and Fuzzel, with Hack Nerd Font and emoji icons for filetypes (e.g., 📄 for .txt, 📁 for directories).
-File Management: Thunar (GUI, Adwaita-dark) and Yazi (terminal, emoji-enhanced) for intuitive navigation.
-Editor: Neovim with nixvim, supporting nvim-orgmode, zettelkasten.nvim, and nvim-cmp for note-taking and coding.
-Networking: Tailscale for secure VPN and SSH, Caddy for Syncthing reverse proxy, and Samba for network shares.
-Storage: LUKS-encrypted BTRFS with subvolumes (/, /home, /nix, etc.) and Snapper for hourly snapshots.
-Secrets: SOPS with age encryption for credentials (joe_password, tailscale_auth_key).
-Packages: Curated tools like bemoji, lazygit, ripgrep, spotify, and zen-browser for productivity and media.
+**Multi-System Support**: Configurations for NixOS (laptops, desktop, VM) and Nix-Darwin (Mac Mini), defined in flake.nix.
+**Desktop Environment**: Hyprland on NixOS with Waybar, SwayNC, Fuzzel, Kitty, and keybindings (SUPER+F for Brave, SUPER+Y for Yazi, SUPER+I for emoji picker).
+**Aesthetic**: Catppuccin Mocha dark theme across Hyprland, Yazi, Kitty, and Fuzzel, with Hack Nerd Font and emoji icons for filetypes (e.g., 📄 for .txt, 📁 for directories).
+**File Management**: Thunar (GUI, Adwaita-dark) and Yazi (terminal, emoji-enhanced) for intuitive navigation.
+**Editor**: Neovim with nixvim, supporting nvim-orgmode, zettelkasten.nvim, and nvim-cmp for note-taking and coding.
+**Networking**: Tailscale for secure VPN and SSH, Caddy for Syncthing reverse proxy, and Samba for network shares.
+**Storage**: LUKS-encrypted BTRFS with subvolumes (/, /home, /nix, etc.) and Snapper for hourly snapshots.
+**Secrets**: SOPS with age encryption for credentials. 
+**Packages**: Curated tools like bemoji, lazygit, ripgrep, spotify, and zen-browser for productivity and media.
 
 Mizuki’s fluid, modular design ensures a consistent, developer-friendly experience across systems, with a focus on modern aesthetics and streamlined workflows. Future enhancements may include [Grok API](https://x.ai/api) integration for AI-assisted note-taking and additional [Yazi plugins](https://github.com/yazi-rs/plugins).
