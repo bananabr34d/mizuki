@@ -2,7 +2,7 @@
 # Mizuki: A Curated NixOS Configuration
 
 [Mizuki](https://github.com/your-username/mizuki) is a [NixOS](https://nixos.org/), [Nix-Darwin](https://github.com/LnL7/nix-darwin), and [Home Manager](https://github.com/nix-community/home-manager) configuration inspired by [Basecamp’s Omarchy](https://github.com/basecamp/omarchy), drawing from the Japanese *omakase* (chef-curated experience) and *mizu* (water) for a fluid, elegant, and opinionated developer environment. Hosted in `~/mizuki`, it manages multiple systems—laptops (`carbon`, `relic`), a desktop (`hydrogen`), a [Mac Mini](https://www.apple.com/mac-mini/) (`silicon`), and a VM (`ether`)—using [Nix flakes](https://nixos.wiki/wiki/Flakes) for reproducible setups. Mizuki features [LUKS](https://wiki.archlinux.org/title/Dm-crypt)-encrypted [BTRFS](https://btrfs.wiki.kernel.org/), [Hyprland](https://hyprland.org/), file management with nautilus and yazi, and tools like [Neovim](https://neovim.io/) for a modern workflow. It emphasizes simplicity, dark theming, and seamless networking via [Tailscale](https://tailscale.com/). 
-This flake provides a minimal NixOS configuration for the Dell XPS 13 (`relic`) with LUKS-encrypted BTRFS and Hyprland desktop. It includes essential packages, SSH, and power management, designed for reliable installation. The `nixosConfigurations` and `homeConfigurations` are defined separately in `../nixos` and `../home-manager` directories for modularity.
+It includes essential packages, SSH, and power management, designed for reliable installation. The `nixosConfigurations` and `homeConfigurations` are defined separately in `../nixos` and `../home-manager` directories for modularity.
 
 ## System Overview
 
