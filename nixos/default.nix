@@ -91,12 +91,13 @@
       brave
       curl
       fastfetch
-      fuzzel
       git
       hyprland
       kitty
-      thunar
+      nautilus
+      # thunar
       vim
+      walker
       waybar
       wget
       yazi
