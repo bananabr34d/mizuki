@@ -1,0 +1,8 @@
+# Nix-related
+/result
+*.nix~
+*.bak
+
+# General
+*.swp
+.DS_Store
