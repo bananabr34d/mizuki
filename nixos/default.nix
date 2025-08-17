@@ -95,6 +95,9 @@
       hyprland
       kitty
       nautilus
+      satty
+      slurp
+      sushi
       # thunar
       vim
       walker
