@@ -30,7 +30,7 @@
       ];
     };
 
-    homeConfigurations."joe@relic" = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations."joe@yurei" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       modules = [
         ../home-manager
