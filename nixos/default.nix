@@ -25,7 +25,7 @@
         configurationLimit = 10;
         consoleMode = "max";
         memtest86.enable = true;
-        timeout = 10;
+        # timeout = 10;
       };
     };
   };
@@ -66,7 +66,6 @@
       PermitRootLogin = "no";
     };
   };
-  networking.networkmanager.enable = true;
   services.printing.enable = true;
   services.avahi.enable = true;
   services.pipewire = {
@@ -95,6 +94,7 @@
       hyprland
       kitty
       nautilus
+      neovim
       satty
       slurp
       sushi
@@ -135,14 +135,14 @@
       shellAliases = {
         nano = "nvim";
       };
-      nh = {
+    };
+    nh = {
+      enable = true;
+      clean = {
         enable = true;
-        clean = {
-          enable = true;
-          extraArgs = "--keep-since 15d --keep 10";
-        };
-        flake = "/home/joe/mizuki"
+        extraArgs = "--keep-since 15d --keep 10";
       };
+      flake = "/home/joe/mizuki"
     };
   };
 

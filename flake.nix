@@ -26,14 +26,14 @@
       modules = [
         nixos-hardware.nixosModules.dell-xps-13-9360
         disko.nixosModules.disko
-        ../nixos
+        ./nixos
       ];
     };
 
     homeConfigurations."joe@yurei" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       modules = [
-        ../home-manager
+        ./home-manager
       ];
     };
   };
